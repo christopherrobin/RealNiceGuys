@@ -12,7 +12,7 @@ const App = () => {
           <iframe
             title="Real Nice Guys Music Player"
             id="iframe"
-            style={{ border: 0, width: '80%', marginTop: '2em', height: '2em' }}
+            style={{ border: 0, width: '20em', marginTop: '2em', height: '2em', margin: 'auto' }}
             src="https://bandcamp.com/EmbeddedPlayer/album=499365377/size=small/bgcol=ffffff/linkcol=63b2cc/artwork=none/track=1294941296/transparent=true/" seamless>
             <a href="http://realniceguys.bandcamp.com/album/holding-on-to-this-feeling-single"
           >
