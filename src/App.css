@@ -39,20 +39,40 @@ h1{
 
 #iframe {
   border: 0;
-  width: 30em;
+  width: 80%;
   height: 2.5em;
   margin: auto;
 }
 
 #top-banner{
   width: 100%;
-  background:rgba(0,0,0,0.4);
-  padding: 1.2em 0 1em 0;
+  padding: 0em 0 1em 0;
   margin-top: 0;
 }
 
-#top-banner img{
-  max-width: 2em;
+#links{
+  padding: 1em 0;
+  background:rgba(0,0,0,0.4);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#links img{
+  margin-left: 2em;
+}
+
+.logo-bg{
+  width: 7em;
+}
+
+.logo-sm{
+  width: 3em;
+}
+
+.coming-soon{
+  opacity: 0.15;
+  cursor: not-allowed;
 }
 
 @media (max-width: 449px) {
@@ -66,4 +86,17 @@ h1{
   .App-logo {
     height: 85vmin;
   }
+
+  #links img{
+    margin-left: 1.2em;
+  }
+
+  .logo-bg{
+    width: 5em;
+  }
+  
+  .logo-sm{
+    width: 2.5em;
+  }
+  
 }
