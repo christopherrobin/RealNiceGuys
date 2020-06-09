@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import RNGLogo from './sometimesitsdarkbutthatsokay.png';
 import SpotifyLogo from './spotify.svg';
-import AmazonLogo from './amazon.png';
+import AmazonLogo from './amazonmusic.png';
 import ITunesLogo from './itunes.svg';
 import InstagramLogo from './instagram.png';
 import YoutubeLogo from './youtube.svg';
