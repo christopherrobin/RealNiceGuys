@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 60vmin;
+  height: 55vmin;
   pointer-events: none;
 }
 
@@ -42,6 +42,7 @@ h1{
   width: 80%;
   height: 2.5em;
   margin: auto;
+  max-width: 35em;
 }
 
 #top-banner{
@@ -84,7 +85,8 @@ h1{
     width: 94%;
   }
   .App-logo {
-    height: 85vmin;
+    height: 90vmin;
+    margin-top: 2em;
   }
 
   #links img{
