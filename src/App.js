@@ -8,7 +8,7 @@ import {
 import RNGLogo from './sometimesitsdarkbutthatsokay.png';
 import SpotifyLogo from './spotify.svg';
 import AmazonLogo from './amazonmusic.png';
-import ITunesLogo from './itunes.svg';
+import ITunesLogo from './ituneslogo.svg';
 import InstagramLogo from './instagram.png';
 import YoutubeLogo from './youtube.svg';
 import './App.css';
