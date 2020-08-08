@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 55vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
@@ -34,7 +34,7 @@
 h1{
   font-size: 4em;
   font-weight: 400;
-  margin: .1em 0 .2em 0;
+  margin: 0 0 .2em 0;
 }
 
 #iframe {
@@ -52,11 +52,11 @@ h1{
 }
 
 #links{
-  padding: 1em 0;
+  padding: 1em 0 1.5em 0;
   background:rgba(0,0,0,0.4);
-  position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 2em;
 }
 
 #links img{
@@ -85,7 +85,7 @@ h1{
     width: 94%;
   }
   .App-logo {
-    height: 90vmin;
+    height: 80vmin;
     margin-top: 2em;
   }
 

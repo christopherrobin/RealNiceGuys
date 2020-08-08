@@ -2,8 +2,15 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.blink-on {
   -webkit-animation: background 3s ease infinite;
   animation: background 3s ease infinite;
+}
+
+.blink-off{
+  background-color: #82ccdd;
 }
 
 h1{
