@@ -18,11 +18,17 @@ const App = () => {
     <div className="App">
         <Router>
           <Switch>
+            <Route path="/HackThePlanet" component={HackThePlanet}>
+            </Route>
             <Route exact path="/">
               <header className="App-header">
                 <h1>REAL NICE GUYS</h1>
               </header>
-              <img src={RNGLogo} className="App-logo" alt="Real Nice Guys Album Art" />
+              <img
+                src={RNGLogo} className="App-logo"
+                alt="Real Nice Guys Smiley Face"
+                title="Real Nice Guys Smiley Face"
+              />
               <div id="links">
                 <div id="top-banner">
                   <iframe
@@ -40,9 +46,6 @@ const App = () => {
                 <img src={ITunesLogo} alt="Listen to Real Nice Guys on iTunes" className="logo-sm coming-soon" />
                 <img src={AmazonLogo} alt="Listen to Real Nice Guys on Amazon" className="logo-bg coming-soon" />
               </div>
-            </Route>
-            <Route path="/hacktheplanet">
-              <HackThePlanet />
             </Route>
           </Switch>
         </Router>

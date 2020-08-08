@@ -1,4 +1,5 @@
 import React from 'react';
+import HackThePlanetGif from './HackThePlanet.gif';
 
 const HackThePlanet = () => {
   return (
@@ -6,7 +7,7 @@ const HackThePlanet = () => {
       <h1 style={{ fontSize: '8em', color: 'white', marginTop: '.2em', lineHeight: '0.8em' }}>HACK THE PLANET</h1>
       <img
         alt="Animated GIF from the movie 'Hackers'"
-        src="https://media.giphy.com/media/HAonhTZTaQE24/giphy.gif"
+        src={HackThePlanetGif}
         style={{ border: 'white solid 1em', maxWidth: '84%' }}
       />
       <p style={{ width: '90%',  margin: 'auto', marginTop: '2em', textAlign: 'left', color: 'white' }}>
