@@ -55,3 +55,12 @@ h1.sprd-detail-info__heading.sprd__headline { font-size: 3em;}
     padding-top: 0;
 }
 a#sprd-basket-button {margin-right: 2.5em;}
+
+.sprd-header.sprd-bg-m1.sprd-c-s3 {
+    position: relative;
+    right: 0;
+}
+
+h1.sprd-detail-mobile-caption__heading.sprd__headline {
+    text-align: left;
+}

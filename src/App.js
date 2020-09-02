@@ -1,6 +1,7 @@
 import React from 'react';
 import HackThePlanet from './HackThePlanet';
 import Shop from './Shop';
+import Media from './Media';
 import Killswitch from './Killswitch';
 import {
   BrowserRouter as Router,
@@ -12,6 +13,7 @@ import FullHeight from "react-full-height";
 import Button from '@material-ui/core/Button';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 
 import RNGLogo from './sometimesitsdarkbutthatsokay.png';
 import RNGLogo2 from './sometimesitsdarkbutthatsokay2.png';
@@ -34,9 +36,18 @@ const App = () => {
     const onOrOff = state.checkedA ? 'on' : 'off';
     const whichLogo = () => (onOrOff === 'on') ? RNGLogo : RNGLogo2;
 
-    const scroll = () => {
+    const scrollToWearables = () => {
       const windowHeight = window.innerHeight;
       window.scroll(0, windowHeight);
+    };
+
+    const scrollToMedia = () => {
+      const windowHeight = window.innerHeight * 2;
+      window.scroll(0, windowHeight);
+    };
+
+    const scrollToTop = () => {
+      window.scroll(0, 0);
     };
 
   return (
@@ -58,16 +69,11 @@ const App = () => {
                     />
                   </div>
                   <div id="navigation">
-                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scroll()}>Wearables</Button>
-                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scroll()}>Audio</Button>
+                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()} style={{ fontSize: '1.8em' }}>Wearables</Button>
+                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()} style={{ fontSize: '1.8em' }}>Media</Button>
                   </div>
                 <div>
                   <div id="links">
-                      <img src={SpotifyLogo} alt="Listen to Real Nice Guys on Spotify" className="logo-sm coming-soon" style={{ marginLeft: 0 }} />
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC_9P0tKrLf1x_qFQ_KZbqLw"><img src={YoutubeLogo} alt="Real Nice Guys on YouTube" className="logo-bg" /></a>
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/real_nice_guys/"><img src={InstagramLogo} alt="Real Nice Guys on Instagram" className="logo-sm" /></a>
-                      <img src={ITunesLogo} alt="Listen to Real Nice Guys on iTunes" className="logo-sm coming-soon" />
-                      <img src={AmazonLogo} alt="Listen to Real Nice Guys on Amazon" className="logo-bg coming-soon" />
                     <div id="top-banner">
                       <iframe
                         id="iframe"
@@ -78,11 +84,29 @@ const App = () => {
                         Holding on to This Feeling (single) by Real Nice Guys</a>
                       </iframe>
                     </div>
+                      <img src={SpotifyLogo} alt="Listen to Real Nice Guys on Spotify" className="logo-sm coming-soon" style={{ marginLeft: 0 }} />
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC_9P0tKrLf1x_qFQ_KZbqLw"><img src={YoutubeLogo} alt="Real Nice Guys on YouTube" className="logo-bg" /></a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/real_nice_guys/"><img src={InstagramLogo} alt="Real Nice Guys on Instagram" className="logo-sm" /></a>
+                      <img src={ITunesLogo} alt="Listen to Real Nice Guys on iTunes" className="logo-sm coming-soon" />
+                      <img src={AmazonLogo} alt="Listen to Real Nice Guys on Amazon" className="logo-bg coming-soon" />
                   </div>
                 </div>
                 </FullHeight>
                 <FullHeight className="shop-container">
+                  <h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Real Nice Wearables</h1>
+                  <div id="navigation" style={{ marginTop: '1em' }}>
+                    <Button size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button>
+                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button>
+                  </div>
                   <Shop />
+                </FullHeight>
+                <FullHeight className="shop-container">
+                  <h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Media</h1>
+                  <div id="navigation" style={{ marginTop: '1em' }}>
+                    <Button size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button>
+                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button>
+                  </div>
+                  <Media />
                 </FullHeight>
             </Route>
           </Switch>

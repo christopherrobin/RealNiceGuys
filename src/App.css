@@ -51,12 +51,12 @@ h1{
 
 #iframe {
   border: 0;
-  width: 80%;
+  width: 90%;
   height: 2.5em;
   margin: auto;
   max-width: 35em;
   border: 1px solid #666;
-  margin-top: 3em;
+  margin-bottom: 2em;
   color: #000;
 }
 
@@ -70,7 +70,7 @@ h1{
   bottom: 0;
   width: 100%;
   text-align: center;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 #links img{
@@ -124,6 +124,7 @@ h1{
   #navigation button {
     margin-top: .8em;
     margin-left: 0;
+    font-size: 1em;
   }
   #links {
     display: none;

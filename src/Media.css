@@ -1,0 +1,52 @@
+#Media-Component {
+    margin-top: 2em;
+    width: 99%;
+}
+
+#Media-Component h2{
+    margin-top: 1em;
+}
+
+#Media-Component a {
+    color: #f50057;
+    text-decoration: none;
+}
+
+#Media-Component a:hover {
+    color: #be0546;
+}
+
+.paper-list-item {
+    padding: 1.3em;
+    width: 100%;
+    max-width: 48em;
+    margin: auto;
+    min-height: 5em;
+}
+
+.paper-list-item img {
+    float: left;
+    margin-right: 2em;
+}
+
+.paper-list-item .logo-sm {
+    width: 5em;
+}
+
+@media only screen and (max-width : 839px) {
+    #Media-Component h2 {
+        margin-top: .5em;
+    }
+    .paper-list-item .logo-sm {
+        width: 4em;
+        margin-right: 1em;
+    }
+    #Media-Component h2{
+        font-size: 1em;
+        font-weight: normal;
+        margin-top: 1.45em;
+    }
+    .MuiPaper-root.paper-list-item.MuiPaper-elevation1.MuiPaper-rounded {
+        width: 80%;
+    }
+}
