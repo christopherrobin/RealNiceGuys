@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import HackThePlanet from './HackThePlanet';
 import Shop from './Shop';
 import Media from './Media';
@@ -24,7 +25,17 @@ import InstagramLogo from './instagram.png';
 import YoutubeLogo from './youtube.svg';
 import './App.css';
 
+const initializeReactGA = () => {
+  ReactGA.initialize('UA-135718333-2');
+  ReactGA.pageview('/RNG-landing-page');
+}
+
 const App = () => {
+
+    useEffect(() => {
+      initializeReactGA();
+    }, []);
+
     const [state, setState] = React.useState({
         checkedA: false,
     });
