@@ -95,3 +95,7 @@ div#myShop {
     margin-left: .4em;
   }
 }
+
+.SprdMain .sprd-cookie-banner {
+  display: none;
+}
