@@ -64,3 +64,5 @@ a#sprd-basket-button {margin-right: 2.5em;}
 h1.sprd-detail-mobile-caption__heading.sprd__headline {
     text-align: left;
 }
+
+h1.sprd-detail-info__heading.sprd__headline {text-align: left}

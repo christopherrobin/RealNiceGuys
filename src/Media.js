@@ -41,7 +41,7 @@ export const Media = () => {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className="paper-list-item">
+          <Paper className="paper-list-item" style={{ marginBottom: '2em' }}>
             <a href="https://www.youtube.com/channel/UC_9P0tKrLf1x_qFQ_KZbqLw" target="_blank" rel="noopener noreferrer">
               <img
                 src={YoutubeLogo}
