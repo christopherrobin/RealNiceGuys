@@ -20,6 +20,11 @@ export const Media = () => {
         </Grid>
         <Grid item xs={12}>
           <Paper className="paper-list-item">
+            <a href="https://realniceguys.bandcamp.com/" target="_blank" rel="noopener noreferrer"><h2>Listen on Bandcamp</h2></a>
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper className="paper-list-item">
             <img
               src={SpotifyLogo}
               alt="Listen to Real Nice Guys on Spotify"
@@ -36,7 +41,7 @@ export const Media = () => {
                 alt="Real Nice Guys on Instagram"
                 className="logo-sm"
               />
-              <h2>Real Nice Guys on Instagram</h2>
+              <h2>Instagram</h2>
             </a>
           </Paper>
         </Grid>
@@ -49,7 +54,7 @@ export const Media = () => {
                 className="logo-sm"
                 style={{ marginTop: '1.4em' }}
               />
-              <h2>Real Nice Guys on YouTube</h2>
+              <h2>YouTube</h2>
             </a>
           </Paper>
         </Grid>
