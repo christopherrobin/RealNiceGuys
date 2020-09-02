@@ -1,10 +1,22 @@
-.App {
-  text-align: center;
+html, body, #app, #app {
+  height: 100% !important;
+}
+
+body{
+  overflow: hidden; /* Hide scrollbars */
+}
+
+#main-section {
+  height: 100% !important;
 }
 
 .App-logo {
   height: 50vmin;
   pointer-events: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -43,6 +55,9 @@ h1{
   height: 2.5em;
   margin: auto;
   max-width: 35em;
+  border: 1px solid #666;
+  margin-top: 3em;
+  color: #000;
 }
 
 #top-banner{
@@ -52,12 +67,10 @@ h1{
 }
 
 #links{
-  padding: 1em 0 1.5em 0;
-  background:rgba(0,0,0,0.7);
   bottom: 0;
   width: 100%;
-  margin-top: 2em;
-  position: fixed;
+  text-align: center;
+  margin-top: 5em;
 }
 
 #links img{
@@ -102,4 +115,21 @@ h1{
     width: 2.5em;
   }
   
+}
+
+@media only screen and (max-width : 738px) {
+  #navigation {
+    margin-top: 1em;
+  }
+  #navigation button {
+    margin-top: .8em;
+    margin-left: 0;
+  }
+  #links {
+    display: none;
+  }
+  .App-logo {
+    margin-top: .5em;
+    height: 70vmin;
+  }
 }
