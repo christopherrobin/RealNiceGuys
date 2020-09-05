@@ -109,7 +109,7 @@ const App = () => {
                 <h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Media</h1>
                 <div id="navigation" style={{ marginTop: '1em' }}>
                   <Button size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button>
-                  <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button>
+                  <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary"  style={{ marginLeft: 10 }} onClick={() => scrollToWearables()}>Wearables</Button>
                 </div>
                 <Media />
               </FullHeight>
@@ -117,7 +117,7 @@ const App = () => {
                 <h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Real Nice Wearables</h1>
                 <div id="navigation" style={{ marginTop: '1em' }}>
                   <Button size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button>
-                  <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button>
+                  <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" style={{ marginLeft: 10 }} onClick={() => scrollToMedia()}>Media</Button>
                 </div>
                 <Shop />
               </FullHeight>

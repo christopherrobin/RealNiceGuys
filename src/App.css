@@ -133,3 +133,7 @@ h1{
     height: 70vmin;
   }
 }
+
+.SprdMain .sprd-cookie-banner {
+  display: none;
+}

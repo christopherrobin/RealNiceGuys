@@ -15,7 +15,7 @@ export const Media = () => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className="paper-list-item" style={{ textAlign: 'center' }}>
-            <iframe title="Real Nice Guys Promo Video" style={{ margin: 'auto' }} width="95%" height="450" src="https://www.youtube.com/embed/k8JJiMokoEo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title="Real Nice Guys Promo Video" style={{ margin: 'auto' }} width="100%" height="250" src="https://www.youtube.com/embed/k8JJiMokoEo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Paper>
         </Grid>
         <Grid item xs={12}>
