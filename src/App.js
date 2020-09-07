@@ -81,8 +81,8 @@ const App = () => {
                     />
                   </div>
                   <div id="navigation">
-                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()} style={{ fontSize: '1.4em' }}>Media</Button>
-                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()} style={{ fontSize: '1.4em' }}>Wearables</Button>
+                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()} style={{ fontSize: '1.8em' }}>Media</Button>
+                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()} style={{ fontSize: '1.8em' }}>Wearables</Button>
                   </div>
                 <div>
                   <div id="links">
@@ -96,15 +96,6 @@ const App = () => {
                         Holding on to This Feeling (single) by Real Nice Guys</a>
                       </iframe>
                     </div>
-                    {/*
-                    <span>
-                      <img src={SpotifyLogo} alt="Listen to Real Nice Guys on Spotify" className="logo-sm coming-soon" style={{ marginLeft: 0 }} />
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC_9P0tKrLf1x_qFQ_KZbqLw"><img src={YoutubeLogo} alt="Real Nice Guys on YouTube" className="logo-bg" /></a>
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/real_nice_guys/"><img src={InstagramLogo} alt="Real Nice Guys on Instagram" className="logo-sm" /></a>
-                      <img src={ITunesLogo} alt="Listen to Real Nice Guys on iTunes" className="logo-sm coming-soon" />
-                      <img src={AmazonLogo} alt="Listen to Real Nice Guys on Amazon" className="logo-bg coming-soon" />
-                    </span>
-                    */}
                   </div>
                 </div>
               </FullHeight>
