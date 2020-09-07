@@ -16,11 +16,6 @@ export const Media = () => {
       <Container>
         <Row>
           <Col xs={12}>
-            <Paper className="paper-list-item" style={{ textAlign: 'center' }}>
-              <iframe title="Real Nice Guys Promo Video" style={{ margin: 'auto' }} width="100%" height="250" src="https://www.youtube.com/embed/k8JJiMokoEo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            </Paper>
-          </Col>
-          <Col xs={12}>
             <Paper className="paper-list-item">
               <img src={BCLogo} alt="RNG on Bandcamp" className="logo-sm" />
               <a href="https://realniceguys.bandcamp.com/" target="_blank" rel="noopener noreferrer"><h2>Listen on Bandcamp</h2></a>
