@@ -10,6 +10,7 @@ import {
   Route
 } from "react-router-dom";
 import FullHeight from "react-full-height";
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Button from '@material-ui/core/Button';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
@@ -80,8 +81,8 @@ const App = () => {
                     />
                   </div>
                   <div id="navigation">
-                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()} style={{ fontSize: '1.8em', marginLeft: 0 }}>Media</Button>
-                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()} style={{ fontSize: '1.8em' }}>Wearables</Button>
+                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()} style={{ fontSize: '1.4em' }}>Media</Button>
+                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()} style={{ fontSize: '1.4em' }}>Wearables</Button>
                   </div>
                 <div>
                   <div id="links">
@@ -95,31 +96,47 @@ const App = () => {
                         Holding on to This Feeling (single) by Real Nice Guys</a>
                       </iframe>
                     </div>
-                    <span style={{display: 'none'}}>
+                    {/*
+                    <span>
                       <img src={SpotifyLogo} alt="Listen to Real Nice Guys on Spotify" className="logo-sm coming-soon" style={{ marginLeft: 0 }} />
                       <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC_9P0tKrLf1x_qFQ_KZbqLw"><img src={YoutubeLogo} alt="Real Nice Guys on YouTube" className="logo-bg" /></a>
                       <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/real_nice_guys/"><img src={InstagramLogo} alt="Real Nice Guys on Instagram" className="logo-sm" /></a>
                       <img src={ITunesLogo} alt="Listen to Real Nice Guys on iTunes" className="logo-sm coming-soon" />
                       <img src={AmazonLogo} alt="Listen to Real Nice Guys on Amazon" className="logo-bg coming-soon" />
                     </span>
+                    */}
                   </div>
                 </div>
               </FullHeight>
-              <FullHeight className="shop-container">
-                <h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Media</h1>
-                <div id="navigation" style={{ marginTop: '1em' }}>
-                  <Button size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button>
-                  <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary"  style={{ marginLeft: 10 }} onClick={() => scrollToWearables()}>Wearables</Button>
-                </div>
-                <Media />
+              <FullHeight className="media-container">
+                <Container>
+                  <Row><Col xs={12}><h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Media</h1></Col></Row>
+                  <Row style={{ margin: '1em 0' }}>
+                    <Col xs={6} style={{ textAlign: 'right' }}><Button fullWidth size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button></Col>
+                    <Col xs={6} style={{ textAlign: 'left' }}><Button fullWidth size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button></Col>
+                  </Row>
+                  <Col xs={12}>
+                    <Media />
+                  </Col>
+                </Container>
               </FullHeight>
               <FullHeight className="shop-container">
-                <h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Real Nice Wearables</h1>
-                <div id="navigation" style={{ marginTop: '1em' }}>
-                  <Button size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button>
-                  <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" style={{ marginLeft: 10 }} onClick={() => scrollToMedia()}>Media</Button>
-                </div>
-                <Shop />
+                <Container>
+                <Row>
+                  <Col xs={12}>
+                    <h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Real Nice Wearables</h1>
+                  </Col>
+                </Row>
+                <Row style={{ margin: '1em 0' }}>
+                  <Col xs={6} style={{ textAlign: 'right' }}><Button fullWidth size="large" startIcon={<HomeOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToTop()}>Home</Button></Col>
+                  <Col xs={6}><Button fullWidth size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button></Col>
+                </Row>
+                <Row>
+                  <Col xs={12}>
+                    <Shop />
+                  </Col>
+                </Row>
+                </Container>
               </FullHeight>
             </Route>
           </Switch>

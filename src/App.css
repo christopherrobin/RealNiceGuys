@@ -113,6 +113,11 @@ h1{
   .logo-sm{
     width: 2.5em;
   }
+
+  span.MuiButton-label {
+    font-size: .8em;
+    font-weight: bold;
+}
   
 }
 
@@ -126,7 +131,9 @@ h1{
     font-size: 1em;
   }
   #links {
-    display: none;
+    width: 86%;
+    margin: auto;
+    margin-top: 1em;
   }
   .App-logo {
     margin-top: .5em;
