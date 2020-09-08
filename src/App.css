@@ -95,6 +95,7 @@ h1{
 span.MuiButton-label {
   font-family: 'Amatic SC', 'Helvetica Neue', sans-serif;
   font-size: 2em;
+  font-weight: bold;
 }
 
 @media (max-width: 449px) {
@@ -121,11 +122,6 @@ span.MuiButton-label {
   .logo-sm{
     width: 2.5em;
   }
-
-  span.MuiButton-label {
-    font-size: .8em;
-    font-weight: bold;
-}
   
 }
 

@@ -81,8 +81,8 @@ const App = () => {
                     />
                   </div>
                   <div id="navigation">
-                    <Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()} style={{ fontSize: '1.8em' }}>Media</Button>
-                    <Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()} style={{ fontSize: '1.8em' }}>Wearables</Button>
+                    <Button size="small" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button>
+                    <Button size="small" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button>
                   </div>
                 <div>
                   <div id="links">
