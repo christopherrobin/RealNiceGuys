@@ -71,7 +71,7 @@ const App = () => {
               <FullHeight className="intropage" id={`blink-${onOrOff}`}>
                   <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
                   <header className="App-header">
-                    <h1>Real Nice Guys</h1>
+                    <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
                   </header>
                   <div className="text-center">
                     <img
@@ -80,8 +80,8 @@ const App = () => {
                       title="Real Nice Guys Smiley Face"
                     />
                   </div>
-                  <div id="navigation">
-                    <Button size="small" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button>
+                  <div id="nav" style={{ textAlign: 'center', marginTop: '1em' }}>
+                    <Button size="small" startIcon={<HeadsetOutlinedIcon/>} variant="contained" style={{marginRight: 10}} color="secondary" onClick={() => scrollToMedia()}>Media</Button>
                     <Button size="small" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button>
                   </div>
                 <div>
