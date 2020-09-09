@@ -90,20 +90,6 @@ const App = () => {
                         <Col xs={6} style={{ textAlign: 'right' }}><Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button></Col>
                         <Col xs={6} style={{ textAlign: 'left' }}><Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button></Col>
                       </Row>
-                    <div>
-                      <div id="links">
-                        <div id="top-banner">
-                          <iframe
-                            id="iframe"
-                            title="Real Nice Guys Music Player"
-                            src="https://bandcamp.com/EmbeddedPlayer/album=499365377/size=small/bgcol=ffffff/linkcol=63b2cc/artwork=none/track=1294941296/transparent=true/" seamless>
-                            <a href="http://realniceguys.bandcamp.com/album/holding-on-to-this-feeling-single"
-                          >
-                            Holding on to This Feeling (single) by Real Nice Guys</a>
-                          </iframe>
-                        </div>
-                      </div>
-                    </div>
                     </Col>
                   </Row>
                 </Container>
