@@ -71,43 +71,27 @@ const App = () => {
           <Switch>
             <Route path="/HackThePlanet" component={HackThePlanet}></Route>
             <Route exact path="/">
+
               <FullHeight className="intropage" id={`blink-${onOrOff}`}>
                 <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
                 <Container>
                   <Row>
-                    <Col xs={12}>
-                      <header className="">
-                        <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
-                      </header>
-                      <div className="text-center">
-                        <img
-                          src={whichLogo()} className="App-logo"
-                          alt="Real Nice Guys Smiley Face"
-                          title="Real Nice Guys Smiley Face"
-                        />
-                      </div>
+                    <Col xs={12} className="text-center">
+                      <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
+                      <img
+                        src={whichLogo()} className="App-logo"
+                        alt="Real Nice Guys Smiley Face"
+                        title="Real Nice Guys Smiley Face"
+                      />
                       <Row id="nav" style={{ margin: '1em 0' }}>
                         <Col xs={6} style={{ textAlign: 'right' }}><Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button></Col>
                         <Col xs={6} style={{ textAlign: 'left' }}><Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button></Col>
                       </Row>
-                    <div>
-                      <div id="links">
-                        <div id="top-banner">
-                          <iframe
-                            id="iframe"
-                            title="Real Nice Guys Music Player"
-                            src="https://bandcamp.com/EmbeddedPlayer/album=499365377/size=small/bgcol=ffffff/linkcol=63b2cc/artwork=none/track=1294941296/transparent=true/" seamless>
-                            <a href="http://realniceguys.bandcamp.com/album/holding-on-to-this-feeling-single"
-                          >
-                            Holding on to This Feeling (single) by Real Nice Guys</a>
-                          </iframe>
-                        </div>
-                      </div>
-                    </div>
                     </Col>
                   </Row>
                 </Container>
               </FullHeight>
+
               <FullHeight className="media-container">
                 <Container>
                   <Row><Col xs={12}><h1 style={{ textAlign: 'center', marginTop: '.3em', marginBottom: 0 }}>Media</h1></Col></Row>
@@ -120,6 +104,7 @@ const App = () => {
                   </Col>
                 </Container>
               </FullHeight>
+
               <FullHeight className="shop-container">
                 <Container>
                 <Row>
@@ -138,6 +123,7 @@ const App = () => {
                 </Row>
                 </Container>
               </FullHeight>
+
             </Route>
           </Switch>
         </Router>
