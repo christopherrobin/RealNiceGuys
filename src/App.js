@@ -73,8 +73,12 @@ const App = () => {
             <Route exact path="/">
 
               <FullHeight className="intropage" id={`blink-${onOrOff}`}>
-                <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
                 <Container>
+                  <Row>
+                    <Col xs={12}>
+                      <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
+                    </Col>
+                  </Row>
                   <Row>
                     <Col xs={12} className="text-center">
                       <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
@@ -87,6 +91,18 @@ const App = () => {
                         <Col xs={6} style={{ textAlign: 'right' }}><Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button></Col>
                         <Col xs={6} style={{ textAlign: 'left' }}><Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button></Col>
                       </Row>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs={12} className="text-center" style={{marginTop: '1.5em'}}>
+                      <iframe
+                        id="iframe"
+                        title="Real Nice Guys Music Player"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=499365377/size=small/bgcol=ffffff/linkcol=63b2cc/artwork=none/track=1294941296/transparent=true/" seamless>
+                        <a href="http://realniceguys.bandcamp.com/album/holding-on-to-this-feeling-single"
+                      >
+                        Holding on to This Feeling (single) by Real Nice Guys</a>
+                      </iframe>
                     </Col>
                   </Row>
                 </Container>
