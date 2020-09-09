@@ -88,12 +88,9 @@ h1{
   cursor: not-allowed;
 }
 
-.media-container{}
-.shop-container{}
-
 span.MuiButton-label {
   font-family: 'Amatic SC', 'Helvetica Neue', sans-serif;
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
@@ -137,12 +134,16 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-contained
     font-size: 1em;
   }
   #links {
-    width: 86%;
     margin: auto;
     margin-top: 1em;
   }
   .App-logo {
     margin-top: .5em;
+    width: 90%;
+  }
+  button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary.MuiButton-containedSizeSmall.MuiButton-sizeSmall{
+    min-width: 12em;
+    font-size: .8em;
   }
 }
 

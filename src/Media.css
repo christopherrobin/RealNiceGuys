@@ -1,10 +1,9 @@
 #Media-Component {
     margin-top: 2em;
-    width: 98%;
 }
 
-#Media-Component h2{
-    margin-top: 1em;
+#Media-Component h3{
+    margin-top: .5em;
 }
 
 #Media-Component a {
@@ -19,10 +18,9 @@
 .paper-list-item {
     padding: 1.3em;
     width: 100%;
-    max-width: 48em;
     margin: auto;
-    min-height: 5em;
-    margin-bottom: 1em;;
+    height: 7em;
+    margin-bottom: 1em;
 }
 
 .paper-list-item img {
@@ -35,16 +33,13 @@
 }
 
 @media only screen and (max-width : 839px) {
-    #Media-Component h2 {
-        margin-top: .5em;
-    }
     .paper-list-item .logo-sm {
         width: 4em;
         margin-right: 1em;
     }
-    #Media-Component h2{
+    #Media-Component h3{
         font-size: 1em;
         font-weight: normal;
-        margin-top: 1.45em;
+        margin-top: 1.2em;
     }
 }

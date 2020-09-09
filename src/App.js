@@ -19,11 +19,14 @@ import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 
 import RNGLogo from './sometimesitsdarkbutthatsokay.png';
 import RNGLogo2 from './sometimesitsdarkbutthatsokay2.png';
+/*
 import SpotifyLogo from './spotify.svg';
 import AmazonLogo from './amazonmusic.png';
 import ITunesLogo from './ituneslogo.svg';
 import InstagramLogo from './instagram.png';
 import YoutubeLogo from './youtube.svg';
+*/
+
 import './App.css';
 
 const initializeReactGA = () => {
@@ -69,35 +72,41 @@ const App = () => {
             <Route path="/HackThePlanet" component={HackThePlanet}></Route>
             <Route exact path="/">
               <FullHeight className="intropage" id={`blink-${onOrOff}`}>
-                  <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
-                  <header className="App-header">
-                    <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
-                  </header>
-                  <div className="text-center">
-                    <img
-                      src={whichLogo()} className="App-logo"
-                      alt="Real Nice Guys Smiley Face"
-                      title="Real Nice Guys Smiley Face"
-                    />
-                  </div>
-                  <div id="nav" style={{ textAlign: 'center', marginTop: '1em' }}>
-                    <Button size="small" startIcon={<HeadsetOutlinedIcon/>} variant="contained" style={{marginRight: 10}} color="secondary" onClick={() => scrollToMedia()}>Media</Button>
-                    <Button size="small" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button>
-                  </div>
-                <div>
-                  <div id="links">
-                    <div id="top-banner">
-                      <iframe
-                        id="iframe"
-                        title="Real Nice Guys Music Player"
-                        src="https://bandcamp.com/EmbeddedPlayer/album=499365377/size=small/bgcol=ffffff/linkcol=63b2cc/artwork=none/track=1294941296/transparent=true/" seamless>
-                        <a href="http://realniceguys.bandcamp.com/album/holding-on-to-this-feeling-single"
-                      >
-                        Holding on to This Feeling (single) by Real Nice Guys</a>
-                      </iframe>
+                <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
+                <Container>
+                  <Row>
+                    <Col xs={12}>
+                      <header className="App-header">
+                        <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
+                      </header>
+                      <div className="text-center">
+                        <img
+                          src={whichLogo()} className="App-logo"
+                          alt="Real Nice Guys Smiley Face"
+                          title="Real Nice Guys Smiley Face"
+                        />
+                      </div>
+                      <Row id="nav" style={{ margin: '1em 0' }}>
+                        <Col xs={6} style={{ textAlign: 'right' }}><Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button></Col>
+                        <Col xs={6} style={{ textAlign: 'left' }}><Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button></Col>
+                      </Row>
+                    <div>
+                      <div id="links">
+                        <div id="top-banner">
+                          <iframe
+                            id="iframe"
+                            title="Real Nice Guys Music Player"
+                            src="https://bandcamp.com/EmbeddedPlayer/album=499365377/size=small/bgcol=ffffff/linkcol=63b2cc/artwork=none/track=1294941296/transparent=true/" seamless>
+                            <a href="http://realniceguys.bandcamp.com/album/holding-on-to-this-feeling-single"
+                          >
+                            Holding on to This Feeling (single) by Real Nice Guys</a>
+                          </iframe>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                    </Col>
+                  </Row>
+                </Container>
               </FullHeight>
               <FullHeight className="media-container">
                 <Container>

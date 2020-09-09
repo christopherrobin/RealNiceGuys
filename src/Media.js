@@ -15,10 +15,10 @@ export const Media = () => {
     <div id="Media-Component">
       <Container>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} lg={6}>
             <Paper className="paper-list-item">
               <img src={BCLogo} alt="RNG on Bandcamp" className="logo-sm" />
-              <a href="https://realniceguys.bandcamp.com/" target="_blank" rel="noopener noreferrer"><h2>Listen on Bandcamp</h2></a>
+              <a href="https://realniceguys.bandcamp.com/" target="_blank" rel="noopener noreferrer"><h3>Bandcamp</h3></a>
             </Paper>
           </Col>
           <Col xs={12} md={6}>
@@ -28,7 +28,7 @@ export const Media = () => {
                 alt="Listen to Real Nice Guys on Spotify"
                 className="logo-sm coming-soon"
               />
-              <h2 style={{ color: '#848484' }}>Spotify Available 10.31.2020</h2>
+              <h3 style={{ color: '#848484' }}>Spotify Available 10.31.2020</h3>
             </Paper>
           </Col>
           <Col xs={12} md={6}>
@@ -39,7 +39,7 @@ export const Media = () => {
                   alt="Real Nice Guys on Instagram"
                   className="logo-sm"
                 />
-                <h2>Instagram</h2>
+                <h3>Instagram</h3>
               </a>
             </Paper>
           </Col>
@@ -50,9 +50,9 @@ export const Media = () => {
                   src={YoutubeLogo}
                   alt="Real Nice Guys on YouTube"
                   className="logo-sm"
-                  style={{ marginTop: '1.4em' }}
+                  style={{ marginTop: '1.1em' }}
                 />
-                <h2>YouTube</h2>
+                <h3>YouTube</h3>
               </a>
             </Paper>
           </Col>
