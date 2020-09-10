@@ -16,6 +16,8 @@ body {
   animation: background 3s ease infinite;
 }
 
+#blink-on h1{ color: #fff };
+
 #blink-off{
   background-color: #fff;
 }

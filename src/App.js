@@ -73,12 +73,8 @@ const App = () => {
             <Route exact path="/">
 
               <FullHeight className="intropage" id={`blink-${onOrOff}`}>
+                <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
                 <Container>
-                  <Row>
-                    <Col xs={12}>
-                      <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
-                    </Col>
-                  </Row>
                   <Row>
                     <Col xs={12} className="text-center">
                       <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
