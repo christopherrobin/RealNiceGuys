@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -96,4 +98,5 @@ div#myShop {
   .sprd-basket-indicator__icon-count-wrapper {
     margin-left: .4em;
   }
+
 }

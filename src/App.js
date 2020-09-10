@@ -38,6 +38,7 @@ const App = () => {
 
     useEffect(() => {
       initializeReactGA();
+      window.scrollTo(0,1);
     }, []);
 
     const [state, setState] = React.useState({
@@ -52,10 +53,10 @@ const App = () => {
     const whichLogo = () => (onOrOff === 'on') ? RNGLogo : RNGLogo2;
 
     const scrollToMedia = () => {
-      // var addressBarSize = parseFloat(getComputedStyle(document.documentElement).perspective) - document.documentElement.clientHeight;
-      const windowHeight = window.document.documentElement.clientHeight;
-      console.log(window.document.documentElement.clientHeight);
-      console.log(windowHeight);
+      // var addressBarSize = parseFloat(getComputedStyle(window.document.documentElement).perspective) - document.documentElement.clientHeight;
+      const windowHeight = window.innerHeight;
+      // console.log(window.document.documentElement.clientHeight);
+      // console.log(addressBarSize);
       window.scroll(0, windowHeight);
     };
 
