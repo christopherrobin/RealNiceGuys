@@ -27,6 +27,8 @@ import InstagramLogo from './instagram.png';
 import YoutubeLogo from './youtube.svg';
 */
 
+import { isMobileOnly, isChrome } from 'react-device-detect';
+
 import './App.css';
 
 const initializeReactGA = () => {
@@ -38,7 +40,6 @@ const App = () => {
 
     useEffect(() => {
       initializeReactGA();
-      window.scrollTo(0,1);
     }, []);
 
     const [state, setState] = React.useState({
@@ -57,7 +58,7 @@ const App = () => {
       const windowHeight = window.innerHeight;
       // console.log(window.document.documentElement.clientHeight);
       // console.log(addressBarSize);
-      window.scroll(0, windowHeight);
+      (isChrome && isMobileOnly) ? window.scroll(0, windowHeight + 300) : window.scroll(0, windowHeight);
     };
 
     const scrollToWearables = () => {
