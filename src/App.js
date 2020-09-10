@@ -52,7 +52,10 @@ const App = () => {
     const whichLogo = () => (onOrOff === 'on') ? RNGLogo : RNGLogo2;
 
     const scrollToMedia = () => {
-      const windowHeight = window.innerHeight;
+      // var addressBarSize = parseFloat(getComputedStyle(document.documentElement).perspective) - document.documentElement.clientHeight;
+      const windowHeight = window.document.documentElement.clientHeight;
+      console.log(window.document.documentElement.clientHeight);
+      console.log(windowHeight);
       window.scroll(0, windowHeight);
     };
 
