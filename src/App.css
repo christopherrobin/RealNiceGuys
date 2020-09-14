@@ -3,7 +3,7 @@ html, body, #app {
 }
 
 body{
-  overflow: hidden; /* Hide scrollbars */
+  overflow-x: hidden;
 }
 
 #main-section {
@@ -145,11 +145,17 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-contained
     min-width: 12em;
     font-size: .8em;
   }
-  .intropage {
-    overflow: hidden;
-  }
 }
 
 .SprdMain .sprd-cookie-banner {
   display: none;
+}
+
+.slide {position: absolute; width: 100%; height: 100vh;}
+.slide1 {}
+.slide2 {
+  left: 100%; width: 100%;
+}
+.slide3 {
+  left: 200%; width: 100%;
 }

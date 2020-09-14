@@ -1,0 +1,33 @@
+*{
+  font-family: 'Amatic SC', 'Helvetica Neue', sans-serif;
+}
+
+#container {
+  background-image: url('./album.jpg');
+  object-fit: contain;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#lyricsbg {
+  font-size: 2em;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  line-height: 1em;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary.MuiButton-containedSizeLarge.MuiButton-sizeLarge.MuiButton-fullWidth {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width : 738px) {
+  #lyricsbg {
+    font-size: 1em;
+  }
+}
