@@ -101,3 +101,9 @@ div#myShop {
   }
 
 }
+
+.spotify-announcement {
+  font-family: 'Amatic SC', 'Helvetica Neue', sans-serif;
+  color: #333;
+  font-size: 3em;
+}

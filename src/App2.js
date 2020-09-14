@@ -4,12 +4,13 @@ import HackThePlanet from './HackThePlanet';
 import Shop from './Shop';
 import Media from './Media';
 import Killswitch from './Killswitch';
+import Paper from '@material-ui/core/Paper';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import FullHeight from "react-full-height";
+// import FullHeight from "react-full-height";
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Button from '@material-ui/core/Button';
@@ -19,15 +20,16 @@ import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 
 import RNGLogo from './sometimesitsdarkbutthatsokay.png';
 import RNGLogo2 from './sometimesitsdarkbutthatsokay2.png';
-/*
 import SpotifyLogo from './spotify.svg';
+
+/*
 import AmazonLogo from './amazonmusic.png';
 import ITunesLogo from './ituneslogo.svg';
 import InstagramLogo from './instagram.png';
 import YoutubeLogo from './youtube.svg';
 */
 
-import { isMobileOnly, isChrome } from 'react-device-detect';
+// import { isMobileOnly, isChrome } from 'react-device-detect';
 
 import './App.css';
 
@@ -79,7 +81,7 @@ const App = () => {
                 <Container>
                   <Row>
                     <Col xs={12} className="text-center">
-                      <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
+                      <h1 style={{ fontSize: '4em', marginTop: '.6em' }}>Real Nice Guys</h1>
                       <img
                         src={whichLogo()} className="App-logo"
                         alt="Real Nice Guys Smiley Face"
@@ -91,7 +93,7 @@ const App = () => {
                       </Row>
                     </Col>
                   </Row>
-                  <Row>
+                  <Row style={{ display: 'none' }}>
                     <Col xs={12} className="text-center" style={{marginTop: '1.5em'}}>
                       <iframe
                         id="iframe"
