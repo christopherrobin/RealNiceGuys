@@ -7,7 +7,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import FullHeight from "react-full-height";
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from '@material-ui/core/Button';
 import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
