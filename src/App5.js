@@ -96,7 +96,6 @@ const App = () => {
         <Router>
           <Switch>
             <Route path="/">
-              <FullHeight className="page-container">
                 <div className={`blink-${onOrOff}`}>
 
                   <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
@@ -106,14 +105,14 @@ const App = () => {
                       <Row>
                         <Col xs={12} className="text-center">
                           <h1 id="header">Real Nice Guys</h1>
-                          <img
-                            src={RNGLogo3} className="App-logo"
-                            alt="Real Nice Guys Smiley Face"
-                            title="Real Nice Guys Smiley Face"
-                          />
-                          <Col xs={12} id="countdown" className="text-center">
-                            <div>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
-                          </Col>
+                          <div className="container2">
+                            <img
+                              src={RNGLogo3} className="App-logo"
+                              alt="Real Nice Guys Smiley Face"
+                              title="Real Nice Guys Smiley Face"
+                            />
+                            <div className="vertical-center text-center timer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
+                          </div>
                         </Col>
                       </Row>
                       <Row>
@@ -133,7 +132,6 @@ const App = () => {
                   </div>
 
                 </div>
-              </FullHeight>
             </Route>
           </Switch>
         </Router>

@@ -19,7 +19,6 @@ body {
 
 #header{
   font-size: 4.5em;
-  height: 1.2em;
 }
 
 @-webkit-keyframes background {
@@ -40,16 +39,12 @@ body {
   100% { background-color: #BE90D4; }
 }
 
-
-#Killswitch-Container {
-  height: 2.5em;
-}
-
 .mycontainer{
-  position: absolute;
-  top: 2.5em;
   height: 100vh;
   overflow: hidden;
   background-color: #00b8be;
 }
 
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
