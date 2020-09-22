@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import FullHeight from "react-full-height";
 import { Container, Row, Col } from 'react-bootstrap';
+import Button from '@material-ui/core/Button';
+import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
 import RNGLogo3 from './finalcountdown.png';
 
 import './App5.css';
@@ -83,6 +85,10 @@ const App = () => {
 
     const onOrOff = state.checkedA ? 'on' : 'off';
 
+    const preSave = () => {
+      window.open('https://distrokid.com/hyperfollow/realniceguys/holdin-on-to-this-feeling', '_blank');
+    }
+
   return (
     <div className="App">
         <Router>
@@ -106,6 +112,18 @@ const App = () => {
                           <Col xs={12} id="countdown" className="text-center">
                             <div>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
                           </Col>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col xs={12} className="text-center">
+                          <Button
+                            id="CTA-button"
+                            size="large"
+                            startIcon={<HeadsetOutlinedIcon/>}
+                            variant="contained"
+                            color="secondary"
+                            fullWidth
+                            onClick={() => preSave()}>Pre-Save on Spotify</Button>
                         </Col>
                       </Row>
                     </Container>
