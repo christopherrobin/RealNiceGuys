@@ -54,13 +54,11 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
 }
 
 #countdown {
-    text-align: center;
     font-size: 3.5em;
     line-height: 1.1em;
     font-weight: 900;
-    /*font-family: 'Roboto', sans-serif;*/
     position: absolute;
-    top: 6.6em;
+    top: 5.2em;
     left: 0em;
     color: #fff;
 }
@@ -91,6 +89,10 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
     #interval {
         font-size: .75em;
     }
+    #CTA-button {
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 449px) {}
@@ -100,3 +102,10 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
 body {
     overflow: hidden; /* Hide scrollbars */
 }
+
+
+@media only screen and (min-width : 768px) {
+    #countdown {
+      top: 6.6em;
+    }
+  }

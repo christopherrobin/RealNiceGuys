@@ -24,6 +24,9 @@ const App = () => {
 
     useEffect(() => {
       initializeReactGA();
+      if (window.location.pathname === '/presave') {
+        window.location.replace('https://distrokid.com/hyperfollow/realniceguys/holdin-on-to-this-feeling')
+      }
     }, []);
 
     const calculateTimeLeft = () => {
@@ -44,7 +47,6 @@ const App = () => {
 
     // Start Timer Code
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-    // const [year] = useState(new Date().getFullYear());
 
     useEffect(() => {
         setTimeout(() => {
@@ -93,7 +95,7 @@ const App = () => {
     <div className="App">
         <Router>
           <Switch>
-            <Route exact path="/">
+            <Route path="/">
               <FullHeight className="page-container">
                 <div className={`blink-${onOrOff}`}>
 
@@ -123,7 +125,8 @@ const App = () => {
                             variant="contained"
                             color="secondary"
                             fullWidth
-                            onClick={() => preSave()}>Pre-Save on Spotify</Button>
+                            onClick={() => preSave()}>Pre-Save on Spotify
+                          </Button>
                         </Col>
                       </Row>
                     </Container>
