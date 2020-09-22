@@ -82,7 +82,7 @@ const App = () => {
                 <Container>
                   <Row>
                     <Col xs={12} className="text-center">
-                      <h1 style={{ fontSize: '4em' }}>Real Nice Guys</h1>
+                      
                       <img
                         src={whichLogo()} className="App-logo"
                         alt="Real Nice Guys Smiley Face"

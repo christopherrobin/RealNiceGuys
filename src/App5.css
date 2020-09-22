@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+html{
+    background-color: #00b8be;
+}
+
+h1,
+span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1,
+#countdown
+{
+    font-family: 'Amatic SC', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-weight: 900;
+}
+
+span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
+    font-size: 1.5em;
+    font-weight: 900
+}
+
+#header {
+    font-weight: 900;
+    letter-spacing: .12em;
+    margin: .7em 0 .6em 0;
+}
+
+.App-logo {
+    pointer-events: none;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 5s linear;
+        max-height: 50vh;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mycontainer {
+    width: 100%;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 1.1em;
+    font-weight: 900;
+    /*font-family: 'Roboto', sans-serif;*/
+    position: absolute;
+    top: 6.6em;
+    left: 0em;
+    color: #fff;
+}
+
+#interval{
+    font-weight: 400;
+    font-size: .9em;
+}
+
+@media only screen and (max-width : 449px) {
+    #countdown {
+        top: 4.6em;
+        font-size: 2.5em;
+    }
+    #header {
+        font-size: 3em;
+    }
+
+    #interval {
+        font-size: .75em;
+    }
+}
+
+
+@media (max-width: 449px) {}
+
+@media only screen and (max-width : 738px) {}
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+}

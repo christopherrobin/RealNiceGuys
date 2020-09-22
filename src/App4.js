@@ -76,7 +76,7 @@ const App = () => {
 
         timerComponents.push(
         <div key={uuidv4()}>
-            {timeLeft[interval]} {interval}{" "}
+            {timeLeft[interval]}
         </div>
         );
     });
@@ -124,7 +124,7 @@ const App = () => {
                         alt="Real Nice Guys Smiley Face"
                         title="Real Nice Guys Smiley Face"
                       />
-                      <h1 style={{ fontSize: '5em', marginTop: '.3em' }}>Real Nice Guys</h1>
+                      
                       <Row id="nav" style={{ margin: '1em 0', display: 'none' }}>
                         <Col xs={6} style={{ textAlign: 'right' }}><Button size="large" startIcon={<HeadsetOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToMedia()}>Media</Button></Col>
                         <Col xs={6} style={{ textAlign: 'left' }}><Button size="large" startIcon={<LocalMallOutlinedIcon/>} variant="contained" color="secondary" onClick={() => scrollToWearables()}>Wearables</Button></Col>
