@@ -94,7 +94,7 @@ const App = () => {
     <div className="App">
         <Router>
           <Switch>
-            <Route path="/">
+            <Route path={["/", "/presave"]}>
                 <div className={`blink-${onOrOff}`}>
 
                   <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
