@@ -79,7 +79,7 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
 
 @media only screen and (max-width : 449px) {
     #countdown {
-        top: 4.6em;
+        top: 4.75em;
         font-size: 2.5em;
     }
     #header {
@@ -105,7 +105,5 @@ body {
 
 
 @media only screen and (min-width : 768px) {
-    #countdown {
-      top: 6.6em;
-    }
+    #countdown {}
   }
