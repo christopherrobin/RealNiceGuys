@@ -7,7 +7,7 @@ const initializeReactGA = () => {
   ReactGA.pageview('/RNG-presave1');
 }
 
-const preSave = () => {
+const Presave = () => {
 
     useEffect(() => {
       initializeReactGA();
@@ -23,4 +23,4 @@ const preSave = () => {
   );
 }
 
-export default (preSave);
+export default (Presave);

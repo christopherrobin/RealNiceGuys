@@ -8,7 +8,7 @@ import {
   Route
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
-import { preSave } from './presave'
+import Presave from './presave'
 import Button from '@material-ui/core/Button';
 import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
 import RNGLogo3 from './finalcountdown.png';
@@ -92,10 +92,7 @@ const App = () => {
     <div className="App">
         <Router>
           <Switch>
-            <Route path="/save">
-              <preSave />
-            </Route>
-            <Route path="/">
+            <Route path={["/", "/presave"]}>
                 <div className={`blink-${onOrOff}`}>
 
                   <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
