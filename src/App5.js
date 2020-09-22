@@ -8,6 +8,7 @@ import {
   Route
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
+import { presave } from './presave'
 import Button from '@material-ui/core/Button';
 import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
 import RNGLogo3 from './finalcountdown.png';
@@ -23,9 +24,6 @@ const App = () => {
 
     useEffect(() => {
       initializeReactGA();
-      if (window.location.pathname === '/presave') {
-        window.location.replace('https://distrokid.com/hyperfollow/realniceguys/holdin-on-to-this-feeling')
-      }
     }, []);
 
     const calculateTimeLeft = () => {
@@ -94,7 +92,10 @@ const App = () => {
     <div className="App">
         <Router>
           <Switch>
-            <Route path={["/", "/presave"]}>
+            <Route path="/presave">
+              <presave />
+            </Route>
+            <Route path="/">
                 <div className={`blink-${onOrOff}`}>
 
                   <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
