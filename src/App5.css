@@ -122,6 +122,18 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
     overflow: hidden; /* Hide scrollbars */
 }
 
+#spotifyplayer {
+    margin: auto;
+    width: 100%;
+    font-size: .95em;
+    padding-bottom: 1em;
+}
+
+.MuiAlert-message {
+    width: 100%;
+    margin: auto;
+}
+
 @media (max-width: 520px) {
     .timer {
         font-size: 2.5em;
@@ -129,5 +141,8 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
     .container2 {
         /*height: 50vh;*/
         max-height: 50vh;
+    }
+    #spotifyplayer {
+        padding-bottom: 0;
     }
 }

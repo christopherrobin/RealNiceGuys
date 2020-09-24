@@ -8,9 +8,9 @@ import {
   Route
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
-import Presave from './presave'
 import Button from '@material-ui/core/Button';
 import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
+import TransitionAlerts from './Alert';
 import RNGLogo3 from './finalcountdown.png';
 
 import './App5.css';
@@ -93,11 +93,11 @@ const App = () => {
         <Router>
           <Switch>
             <Route path={["/", "/presave"]}>
-                <div className={`blink-${onOrOff}`}>
-
+                <div className={`mycontainer blink-${onOrOff}`}>
+                  <TransitionAlerts />
                   <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
 
-                  <div className={`mycontainer blink-${onOrOff}`}>
+                  <div className={`blink-${onOrOff}`}>
                     <Container>
                       <Row>
                         <Col xs={12} className="text-center">
@@ -114,6 +114,8 @@ const App = () => {
                       </Row>
                       <Row>
                         <Col xs={12} className="text-center">
+                        {
+                          /*
                           <Button
                             id="CTA-button"
                             size="large"
@@ -123,6 +125,8 @@ const App = () => {
                             fullWidth
                             onClick={() => preSave()}>Pre-Save on Spotify
                           </Button>
+                          */
+                        }
                         </Col>
                       </Row>
                     </Container>
