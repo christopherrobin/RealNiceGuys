@@ -13,6 +13,8 @@ import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
 import TransitionAlerts from './Alert';
 import RNGLogo3 from './finalcountdown.png';
 import rnpPromo from './rnppromo.png';
+import rnpPromo2 from './spookypromo.png';
+import rnpPromo3 from './promoboys.png';
 
 import './App5.css';
 
@@ -114,7 +116,11 @@ const App = () => {
                             />
                             <div className="vertical-center text-center timer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
                           </div>
-                          <div style={{display: 'none'}}><img src={rnpPromo} alt="promo"/></div>
+                          <div style={{display: 'none'}}>
+                            <img src={rnpPromo} alt="promo"/>
+                            <img src={rnpPromo2} alt="promo2"/>
+                            <img src={rnpPromo3} alt="promo3"/>
+                          </div>
                         </Col>
                       </Row>
                       <Row>
