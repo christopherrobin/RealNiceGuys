@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
 import TransitionAlerts from './Alert';
 import RNGLogo3 from './finalcountdown.png';
-import promo from './rng_rnp_promoemail.png';
+import rnpPromo from './rnppromo.png';
 
 import './App5.css';
 
@@ -94,7 +94,7 @@ const App = () => {
         <Router>
           <Switch>
             <Route path={"/secret"}>
-              <img src={promo} alt="promo"/>
+              <img src={rnpPromo} alt="promo"/>
             </Route>
             <Route path={["/", "/presave"]}>
                 <div className={`mycontainer blink-${onOrOff}`}>
@@ -114,7 +114,7 @@ const App = () => {
                             />
                             <div className="vertical-center text-center timer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
                           </div>
-                          <div style={{display: 'none'}}><img src={promo} alt="promo"/></div>
+                          <div style={{display: 'none'}}><img src={rnpPromo} alt="promo"/></div>
                         </Col>
                       </Row>
                       <Row>
