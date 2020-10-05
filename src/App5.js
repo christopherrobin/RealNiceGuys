@@ -114,6 +114,7 @@ const App = () => {
                             />
                             <div className="vertical-center text-center timer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
                           </div>
+                          <div style={{display: 'none'}}><img src={promo} alt="promo"/></div>
                         </Col>
                       </Row>
                       <Row>
