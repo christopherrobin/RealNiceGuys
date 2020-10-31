@@ -100,7 +100,7 @@ const App = () => {
             </Route>
             <Route path={["/", "/presave"]}>
                 <div className={`mycontainer blink-${onOrOff}`}>
-                  <TransitionAlerts />
+                  
                   <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
 
                   <div className={`blink-${onOrOff}`}>
@@ -108,36 +108,7 @@ const App = () => {
                       <Row>
                         <Col xs={12} className="text-center">
                           <h1 id="header">Real Nice Guys</h1>
-                          <div className="container2">
-                            <img
-                              src={RNGLogo3} className="App-logo"
-                              alt="Real Nice Guys Smiley Face"
-                              title="Real Nice Guys Smiley Face"
-                            />
-                            <div className="vertical-center text-center timer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
-                          </div>
-                          <div style={{display: 'none'}}>
-                            <img src={rnpPromo} alt="promo"/>
-                            <img src={rnpPromo2} alt="promo2"/>
-                            <img src={rnpPromo3} alt="promo3"/>
-                          </div>
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col xs={12} className="text-center">
-                        {
-                          /*
-                          <Button
-                            id="CTA-button"
-                            size="large"
-                            startIcon={<HeadsetOutlinedIcon/>}
-                            variant="contained"
-                            color="secondary"
-                            fullWidth
-                            onClick={() => preSave()}>Pre-Save on Spotify
-                          </Button>
-                          */
-                        }
+                          <h4 style={{ color: 'white' }}>We'll be back to release an album at midnight.</h4>
                         </Col>
                       </Row>
                     </Container>
