@@ -56,7 +56,7 @@ const App = () => {
                             <iframe
                               title="Listen to Real Nice Guys"
                               alt="Listen to Real Nice Guys"
-                              src="https://bandcamp.com/EmbeddedPlayer/album=1764206894/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                              src="https://bandcamp.com/EmbeddedPlayer/album=1764206894/size=large/bgcol=ffffff/linkcol=f171a2/artwork=small/transparent=true/"
                               seamless
                               style={{ width: '100%', border: 0, maxWidth: '26em' }}
                               className="player"
