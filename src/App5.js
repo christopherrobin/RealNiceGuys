@@ -1,4 +1,3 @@
-/* eslint-disable no-mixed-operators */
 import React, { useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
 import Killswitch from './Killswitch';
@@ -8,13 +7,13 @@ import {
   Route
 } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
-import Button from '@material-ui/core/Button';
-import HeadsetOutlinedIcon from '@material-ui/icons/HeadsetOutlined';
-import TransitionAlerts from './Alert';
-import RNGLogo3 from './finalcountdown.png';
-import rnpPromo from './rnppromo.png';
-import rnpPromo2 from './spookypromo.png';
-import rnpPromo3 from './promoboys.png';
+import Mailto from 'react-protected-mailto'
+
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
 import './App5.css';
 
@@ -29,54 +28,6 @@ const App = () => {
       initializeReactGA();
     }, []);
 
-    const calculateTimeLeft = () => {
-        let year = new Date().getFullYear();
-        const difference = +new Date(`${year}-10-31`) - +new Date();
-        let timeLeft = {};
-
-        if (difference > 0) {
-            timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60),
-            };
-        }
-        return timeLeft;
-    };
-
-    // Start Timer Code
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-    useEffect(() => {
-        setTimeout(() => {
-        setTimeLeft(calculateTimeLeft());
-        }, 1000);
-    });
-
-    const timerComponents = [];
-
-    Object.keys(timeLeft).forEach((interval, key) => {
-
-        const uuidv4 = () => {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-            var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
-            return v.toString(16);
-        });
-        }
-
-        if (!timeLeft[interval]) {
-        return;
-        }
-
-        timerComponents.push(
-        <div key={uuidv4()}>
-            {timeLeft[interval]} <span id="interval">{interval}{" "}</span>
-        </div>
-        );
-    });
-    // End Time Code
-
     const [state, setState] = useState({
         checkedA: false,
     });
@@ -84,36 +35,45 @@ const App = () => {
     const handleChange = (event) => {
         setState({ ...state, [event.target.name]: event.target.checked });
     };
-
     const onOrOff = state.checkedA ? 'on' : 'off';
-
-    const preSave = () => {
-      window.open('https://distrokid.com/hyperfollow/realniceguys/holdin-on-to-this-feeling', '_blank');
-    }
 
   return (
     <div className="App">
         <Router>
           <Switch>
-            <Route path={"/secret"}>
-              <img src={rnpPromo} alt="promo"/>
-            </Route>
-            <Route path={["/", "/presave"]}>
+            <Route path={'/'}>
+                <div className="topper d-none d-sm-block">
+                  <a title="Listen to Real Nice Guys on Spotify" alt="Listen to Real Nice Guys on Spotify" href="https://open.spotify.com/artist/6NtJSpbLAsmNQybFG6tzyR" target="_blank" rel="noopener noreferrer">Listen on Spotify<KeyboardArrowRightIcon /></a>
+                </div>
                 <div className={`mycontainer blink-${onOrOff}`}>
-                  
-                  <Killswitch checkedA={state.checkedA} handleChange={handleChange} />
-
+                  <span className="d-none d-sm-block"><Killswitch checkedA={state.checkedA} handleChange={handleChange} /></span>
                   <div className={`blink-${onOrOff}`}>
                     <Container>
                       <Row>
+                        <Col xs={12}><h1 id="header" className="text-center">Real Nice Guys</h1></Col>
                         <Col xs={12} className="text-center">
-                          <h1 id="header">Real Nice Guys</h1>
-                          <h4 style={{ color: 'white' }}>We'll be back to release an album at midnight.</h4>
+                          <div className="text-center">
+                            <iframe
+                              title="Listen to Real Nice Guys"
+                              alt="Listen to Real Nice Guys"
+                              src="https://bandcamp.com/EmbeddedPlayer/album=1764206894/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                              seamless
+                              style={{ width: '100%', border: 0, maxWidth: '26em' }}
+                              className="player"
+                            >
+                          </iframe>
+                          </div>
+                          <div className="text-center">
+                            <div style={{ margin: '0 0 1em 0' }}><Mailto style={{ display: 'block', fontWeight: 'bold'}} className="social-icon-nomargin" email='info@realniceguys.com' /></div>
+                            <a alt="Real Nice Guys on Instagram" href="https://www.instagram.com/real_nice_guys/" className="social-icon-nomargin" target="_blank" rel="noopener noreferrer"><InstagramIcon fontSize="large" /></a>
+                            <a alt="Real Nice Guys on YouTube" href="https://www.youtube.com/channel/UC_9P0tKrLf1x_qFQ_KZbqLw" className="social-icon" target="_blank" rel="noopener noreferrer"><YouTubeIcon fontSize="large" /></a>
+                            <a alt="Real Nice Guys on Twitter" href="https://twitter.com/Real_Nice_Guys" className="social-icon" target="_blank" rel="noopener noreferrer"><TwitterIcon fontSize="large" /></a>
+                            <a alt="Real Nice Guys on Facebook" href="https://www.facebook.com/RealNiceGuys/" className="social-icon" target="_blank" rel="noopener noreferrer"><FacebookIcon fontSize="large" /></a>
+                          </div>
                         </Col>
                       </Row>
                     </Container>
                   </div>
-
                 </div>
             </Route>
           </Switch>

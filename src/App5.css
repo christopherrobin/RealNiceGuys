@@ -22,6 +22,7 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
     font-weight: 900;
     letter-spacing: .12em;
     margin: .3em 0 .6em 0;
+    text-align: center;
 }
 
 .App-logo {
@@ -31,6 +32,24 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
 
 .text-center {
     text-align: center;
+}
+
+.social-icon-nomargin {
+    color: #fff;
+    font-weight: bold;
+}
+
+.social-icon {
+    color: #fff;
+    margin-left: 2.2em;
+    font-weight: bold;
+}
+.topper {
+    background-color: #fe457f;
+    text-align: center;
+    padding: .5em 0;
+    font-size: .85em;
+    font-weight: bold;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -144,5 +163,31 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
     }
     #spotifyplayer {
         padding-bottom: 0;
+    }
+}
+
+a.social-icon-nomargin:hover,
+a.social-icon:hover {
+    color: #fe457f;
+}
+
+.topper a{
+    color: #fff;
+    padding: .3em;
+}
+
+.topper a:hover {
+    color: #fe457f;
+    background: #fff;
+    text-decoration: none;
+}
+
+.player{
+    height: 35em;
+}
+
+@media only screen and (max-width : 738px) {
+    .player{
+        height: 29em;
     }
 }
