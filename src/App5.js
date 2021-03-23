@@ -15,6 +15,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
+import elon from './elon.png';
+
 import './App5.css';
 
 const initializeReactGA = () => {
@@ -42,8 +44,8 @@ const App = () => {
         <Router>
           <Switch>
             <Route path={'/'}>
-                <div className="topper d-none d-sm-block">
-                  <a title="Listen to Real Nice Guys on Spotify" alt="Listen to Real Nice Guys on Spotify" href="https://open.spotify.com/artist/6NtJSpbLAsmNQybFG6tzyR" target="_blank" rel="noopener noreferrer">Listen on Spotify<KeyboardArrowRightIcon /></a>
+                <div className="topper">
+                  <a title="Listen to Real Nice Guys on Spotify" alt="Open to Real Nice Guys on Spotify" href="https://open.spotify.com/artist/6NtJSpbLAsmNQybFG6tzyR" target="_blank" rel="noopener noreferrer">Open on Spotify<KeyboardArrowRightIcon /></a>
                 </div>
                 <div className={`mycontainer blink-${onOrOff}`}>
                   <span className="d-none d-sm-block"><Killswitch checkedA={state.checkedA} handleChange={handleChange} /></span>
@@ -61,8 +63,11 @@ const App = () => {
                           </div>
                         </Col>
                         <Col xs={12} className="text-center">
+                          <img alt='Album art to Song for Elon by Real Nice Guys' src={elon} style={{ width: '90%', border: '5px solid #ae39df', maxWidth: '600px'}} />
+                          <h1 style={{ margin: '0', color: 'white' }}>new single out</h1>
+                          <h1>4/20/21</h1>
                           <div className="text-center">
-                            <iframe
+{/*                             <iframe
                               title="Listen to Real Nice Guys"
                               alt="Listen to Real Nice Guys"
                               src="https://bandcamp.com/EmbeddedPlayer/album=1764206894/size=large/bgcol=ffffff/linkcol=f171a2/artwork=small/transparent=true/"
@@ -70,7 +75,7 @@ const App = () => {
                               style={{ width: '100%', border: 0, maxWidth: '26em' }}
                               className="player"
                             >
-                          </iframe>
+                          </iframe> */}
                           </div>
                         </Col>
                       </Row>

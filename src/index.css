@@ -14,7 +14,7 @@ body {
 }
 
 .blink-off #Killswitch-Container {
-  background-color: #00b8be;
+  background-color: #333;
 }
 
 #header{
@@ -42,7 +42,8 @@ body {
 .mycontainer{
   height: 100vh;
   overflow: hidden;
-  background-color: #00b8be;
+  /*background-color: #00b8be;*/
+  background-color: #333;
 }
 
 body {

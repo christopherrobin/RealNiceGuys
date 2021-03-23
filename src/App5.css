@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 html{
-    background-color: #00b8be;
+    /*background-color: #00b8be;*/
+    background-color: #333;
 }
 
 h1,
 span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1,
-#countdown
+#countdown,
+p
 {
     font-family: 'Amatic SC', 'Helvetica Neue', sans-serif;
     color: #fff;
@@ -45,7 +47,7 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
     font-weight: bold;
 }
 .topper {
-    background-color: #fe457f;
+    background-color: #ae39df;
     text-align: center;
     padding: .5em 0;
     font-size: .85em;
@@ -168,16 +170,20 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
 
 a.social-icon-nomargin:hover,
 a.social-icon:hover {
-    color: #fe457f;
+    color: #ae39df;
+}
+
+.topper {
+    padding: 1em;
 }
 
 .topper a{
     color: #fff;
-    padding: .3em;
+    padding: .5em;
 }
 
 .topper a:hover {
-    color: #fe457f;
+    color: #ae39df;
     background: #fff;
     text-decoration: none;
 }
