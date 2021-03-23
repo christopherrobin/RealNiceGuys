@@ -28,6 +28,33 @@ const App = () => {
 
     useEffect(() => {
       initializeReactGA();
+      console.info(`
+      ____  _____    _    _       _   _ ___ ____ _____    ____ _   ___   ______  
+      |  _ \\| ____|  / \\  | |     | \\ | |_ _/ ___| ____|  / ___| | | \\ \\ / / ___| 
+      | |_) |  _|   / _ \\ | |     |  \\| || | |   |  _|   | |  _| | | |\\ V /\\___ \\ 
+      |  _ <| |___ / ___ \\| |___  | |\\  || | |___| |___  | |_| | |_| | | |  ___) |
+      |_| \\_\\_____/_/   \\_\\_____| |_| \\_|___\\____|_____|  \\____|\\___/  |_| |____/ 
+
+      You've stumbled upon the beginning of an elaborate rabbit hole. Nice!
+      At the end of this quest lies a treasure trove of real nice content
+      and access to an inner circle of fellow real nice brethren. You'll find
+      videos that you can't unsee. You'll hear tracks from the boys that
+      you would think should be sound crimes. This is not a social networking
+      website, it's a diverse collective of real nice people who like
+      Real Nice songs. Good luck and if you need help ¯\\_(ツ)_/¯
+      
+      If you want our hot uploads
+      You'll have to crack our real nice codes
+      I've listed below the address to start
+      It's fully encrypted so I hope you're smart
+      The pad you need repeatsandrepeatsandrepeatsandrepeats
+      It's the initials of the authors who compose these beats
+
+      ygzg://jcn.ekrytzpkxhej.pud/ugtxzyrvcntvg
+
+      Love,
+      RNG
+      `);
     }, []);
 
     const [state, setState] = useState({
