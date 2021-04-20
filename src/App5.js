@@ -6,7 +6,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import Mailto from 'react-protected-mailto'
 
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -79,11 +79,6 @@ const App = () => {
                   <div className={`blink-${onOrOff}`}>
                     <Container>
                       <Row>
-                        <Col className="text-center" style={{ marginTop: '1em' }}>
-                          <iframe width="90%" height="315" src="https://www.youtube.com/embed/ATJsrQowmbE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                        </Col>
-                      </Row>
-                      <Row>
                         <Col xs={12}><h1 id="header" className="text-center">Real Nice Guys</h1></Col>
                         <Col xs={12}>
                           <div className="text-center" style={{margin: '.5em 0 1.5em 0'}}>
@@ -93,6 +88,12 @@ const App = () => {
                             <a alt="Real Nice Guys on Facebook" href="https://www.facebook.com/RealNiceGuys/" className="social-icon" target="_blank" rel="noopener noreferrer"><FacebookIcon fontSize="large" /></a>
                             <div style={{marginTop: '1em'}}><Mailto style={{ display: 'block', fontWeight: 'bold' }} className="social-icon-nomargin" email='info@realniceguys.com' /></div>
                           </div>
+                        </Col>
+                        <Col xs={12} className="text-center"><Button variant="info" onClick={() => window.open('https://shop.spreadshirt.com/realniceguys/')}>Shop RNG<KeyboardArrowRightIcon /></Button></Col>
+                      </Row>
+                      <Row>
+                        <Col className="text-center" style={{ marginTop: '2em' }}>
+                          <iframe width="80%" height="315" src="https://www.youtube.com/embed/ATJsrQowmbE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         </Col>
                       </Row>
                     </Container>
