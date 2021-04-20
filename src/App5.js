@@ -80,7 +80,7 @@ const App = () => {
                     <Container>
                       <Row>
                         <Col className="text-center" style={{ marginTop: '1em' }}>
-                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ATJsrQowmbE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                          <iframe width="90%" height="315" src="https://www.youtube.com/embed/ATJsrQowmbE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         </Col>
                       </Row>
                       <Row>
