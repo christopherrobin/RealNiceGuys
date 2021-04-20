@@ -5,7 +5,7 @@ html{
     background-color: #333;
 }
 
-h1,
+h1, h2, h3, h4, h5,
 span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1,
 #countdown,
 p
@@ -139,9 +139,6 @@ span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
     width: 100%;
   }
 
-  body {
-    
-}
 
 #spotifyplayer {
     margin: auto;

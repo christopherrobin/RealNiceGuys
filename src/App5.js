@@ -15,7 +15,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
-import elon from './elon.png';
+// import elon from './elon.png';
 
 import './App5.css';
 
@@ -79,6 +79,11 @@ const App = () => {
                   <div className={`blink-${onOrOff}`}>
                     <Container>
                       <Row>
+                        <Col className="text-center" style={{ marginTop: '1em' }}>
+                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ATJsrQowmbE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        </Col>
+                      </Row>
+                      <Row>
                         <Col xs={12}><h1 id="header" className="text-center">Real Nice Guys</h1></Col>
                         <Col xs={12}>
                           <div className="text-center" style={{margin: '.5em 0 1.5em 0'}}>
@@ -87,22 +92,6 @@ const App = () => {
                             <a alt="Real Nice Guys on Twitter" href="https://twitter.com/Real_Nice_Guys" className="social-icon" target="_blank" rel="noopener noreferrer"><TwitterIcon fontSize="large" /></a>
                             <a alt="Real Nice Guys on Facebook" href="https://www.facebook.com/RealNiceGuys/" className="social-icon" target="_blank" rel="noopener noreferrer"><FacebookIcon fontSize="large" /></a>
                             <div style={{marginTop: '1em'}}><Mailto style={{ display: 'block', fontWeight: 'bold' }} className="social-icon-nomargin" email='info@realniceguys.com' /></div>
-                          </div>
-                        </Col>
-                        <Col xs={12} className="text-center">
-                          <img alt='Album art to Song for Elon by Real Nice Guys' src={elon} style={{ width: '90%', border: '5px solid #ae39df', maxWidth: '600px'}} />
-                          <h1 style={{ margin: '0', color: 'white' }}>new single out</h1>
-                          <h1>4/20/21</h1>
-                          <div className="text-center">
-{/*                             <iframe
-                              title="Listen to Real Nice Guys"
-                              alt="Listen to Real Nice Guys"
-                              src="https://bandcamp.com/EmbeddedPlayer/album=1764206894/size=large/bgcol=ffffff/linkcol=f171a2/artwork=small/transparent=true/"
-                              seamless
-                              style={{ width: '100%', border: 0, maxWidth: '26em' }}
-                              className="player"
-                            >
-                          </iframe> */}
                           </div>
                         </Col>
                       </Row>
