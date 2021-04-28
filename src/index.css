@@ -42,6 +42,7 @@ body {
 .mycontainer{
   /*background-color: #00b8be;*/
   background-color: #333;
+  height: 96vh;
 }
 
 body {
